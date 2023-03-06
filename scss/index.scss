@@ -1,0 +1,94 @@
+@import './colors';
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+        width: fit-content;
+        margin: 1rem auto;
+
+        text-align: center;
+
+    h1{
+
+        font-size: 3rem;
+    }
+
+    ul{
+
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3,6rem);
+        gap:0.6rem 0.8rem;
+        padding: 0;
+    
+        
+    }
+    
+    .color-palet{
+        width: 6.2rem;;
+        height: 6rem;
+        background-color: $primary;
+        border-radius: 20px;
+        box-shadow: 0 3px 9px rgb(0, 0, 0,0.2);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        
+       
+    
+        &:active{
+            background-color: rgb(242, 242, 242);
+            transform: scale(0.95);
+        }
+    }
+    
+    input{
+    
+        width: 19rem;
+    }
+    
+    .colorName{
+    
+        text-align: center;
+        margin-top: 4.5rem;
+        font-size: 0.7rem;
+        color: aliceblue;
+        opacity: 0.7;
+    }
+    
+    button{
+        display: block;
+        width: fit-content;
+        margin-left: 6rem;
+        border: none;
+        padding: 0.8rem 1.7rem;
+        border-radius: 20px;
+        font-family: inherit;
+        color: aliceblue;
+        font-size: 1.2rem;
+        box-shadow: 0 2px 8px rgb(0, 0, 0,0.2);
+        background: linear-gradient(50deg,$secondary2,$secondary1);
+
+        &:hover{
+
+            background: linear-gradient(50deg,$secondary3,$secondary4);
+        }
+
+        &:active{
+
+            background: linear-gradient(50deg,$secondary5,$secondary6);
+        }
+    }
+
+    img{
+    
+        width: 1rem;
+        margin-top: 4.5rem;
+        margin-left: 4.4rem;
+        
+    }
+
+}
+
